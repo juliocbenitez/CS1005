@@ -9,10 +9,6 @@
 </head>
 
 <body>
-
-</body>
-
-</html>
 <!-- Header -->
 <header class="site-header">
     <a href="index.html">
@@ -91,31 +87,37 @@
 </main>
 
 <!-- Footer -->
-<footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-top">
-        <h3>Subscribe to our Newsletter</h3>
-        <form class="newsletter" action="#" method="post">
-            <label class="sr-only" for="email">Email address</label>
-            <input id="email-unique" name="EmailAddress" type="email" placeholder="Your Email" required>
-            <button type="submit">Subscribe</button>
-        </form>
+      <h3 id="myh3">Subscribe to our Newsletter</h3>
+      <form class="newsletter" id="newsletterForm" onsubmit="return false;">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email2" name="EmailAddress" type="email" placeholder="Enter your email address" required>
+        <button id="subscribeBtn" type="button">Subscribe</button>
+      </form>
     </div>
 
     <nav aria-label="Footer">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="community.html">Checkout</a></li>
-        </ul>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="community.html">Checkout</a></li>
+      </ul>
     </nav>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <ul class="social">
-        <li><a aria-label="Facebook" href="#" class="fa fa-facebook" title="Facebook"></a></li>
-        <li><a aria-label="Google" href="#" class="fa fa-google" title="Google"></a></li>
-        <li><a aria-label="YouTube" href="#" class="fa fa-youtube" title="YouTube"></a></li>
-        <li><a aria-label="Reddit" href="#" class="fa fa-reddit" title="Reddit"></a></li>
+      <li><a aria-label="Facebook" href="#" class="fa fa-facebook" title="Facebook"></a></li>
+      <li><a aria-label="Google" href="#" class="fa fa-google" title="Google"></a></li>
+      <li><a aria-label="YouTube" href="#" class="fa fa-youtube" title="YouTube"></a></li>
+      <li><a aria-label="Reddit" href="#" class="fa fa-reddit" title="Reddit"></a></li>
     </ul>
-</footer>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

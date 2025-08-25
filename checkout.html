@@ -9,204 +9,206 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="site-header">
+        <a href="index.html">
+            <img src="images/output-onlinepngtools.png" alt="Book Haven Bookstore Logo" width="100" height="100">
+        </a>
 
-</body>
+        <a href="index.html" class="site-title-link">
+            <h1>Book Haven Bookstore</h1>
+        </a>
 
-</html>
-<!-- Header -->
-<header class="site-header">
-    <a href="index.html">
-        <img src="images/output-onlinepngtools.png" alt="Book Haven Bookstore Logo" width="100" height="100">
-    </a>
-
-    <a href="index.html" class="site-title-link">
-        <h1>Book Haven Bookstore</h1>
-    </a>
-
-    <nav aria-label="Primary">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="checkout.html">Checkout</a></li>
-        </ul>
-    </nav>
-</header>
-
-<h1 id="checkout-title">Checkout</h1>
-
-<main class="checkout" aria-labelledby="checkout-title">
-    <div class="checkout__grid">
-
-        <!-- Billing Details -->
-        <section class="card" aria-labelledby="billing-title">
-            <h2 id="billing-title">Billing Details</h2>
-
-            <div class="fields">
-                <div class="field">
-                    <label for="fullName">Full Name</label>
-                    <input id="fullName" name="fullName" type="text" placeholder="Jane Doe" required />
-                </div>
-
-                <div class="field">
-                    <label for="email">Email Address</label>
-                    <input id="email" name="email" type="email" placeholder="jane@example.com" required />
-                </div>
-
-                <div class="field">
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" name="phone" type="tel" placeholder="+1 555 123 4567" />
-                </div>
-            </div>
-        </section>
-
-        <!-- Shipping Address -->
-        <section class="card" aria-labelledby="shipping-title">
-            <h2 id="shipping-title">Shipping Address</h2>
-
-            <div class="fields">
-                <div class="field">
-                    <label for="address1">Address</label>
-                    <input id="address1" name="address1" type="text" placeholder="123 Main Street" required />
-                </div>
-
-                <div class="field two-col">
-                    <div>
-                        <label for="city">City</label>
-                        <input id="city" name="city" type="text" placeholder="Los Angeles" required />
-                    </div>
-
-                    <div>
-                        <label for="zip">ZIP Code</label>
-                        <input id="zip" name="zip" type="text" placeholder="90001" required />
-                    </div>
-                </div>
-
-                <div class="field two-col">
-                    <div>
-                        <label for="state">State/Province</label>
-                        <input id="state" name="state" type="text" placeholder="CA" required />
-                    </div>
-
-                    <div>
-                        <label for="country">Country</label>
-                        <select id="country" name="country" required>
-                            <option value="" disabled selected>Select a country</option>
-                            <option>United States</option>
-                            <option>Canada</option>
-                            <option>United Kingdom</option>
-                        </select>
-                    </div>
-                </div>
-
-                <label class="check">
-                    <input type="checkbox" id="sameAsBilling" />
-                    Shipping address is the same as billing
-                </label>
-            </div>
-        </section>
-
-        <!-- Shipping Method -->
-        <section class="card" aria-labelledby="shipping-method-title">
-            <h2 id="shipping-method-title">Shipping Method</h2>
-
-            <div class="radio-group">
-                <label class="radio">
-                    <input type="radio" name="shipMethod" checked />Standard (3-5 business days) — Free
-                </label>
-                <label class="radio">
-                    <input type="radio" name="shipMethod" />Expedited (2 business days) — $9.99
-                </label>
-                <label class="radio">
-                    <input type="radio" name="shipMethod" />Next-Day — $19.99
-                </label>
-            </div>
-        </section>
-
-        <!-- Payment -->
-        <section class="card" aria-labelledby="payment-title">
-            <h2 id="payment-title">Payment</h2>
-
-            <div class="fields">
-                <div class="field">
-                    <label for="cardNumber">Card Number</label>
-                    <input id="cardNumber" name="cardNumber" inputmode="numeric" placeholder="1234 5678 9012 3456"
-                        required />
-                </div>
-
-                <div class="field two-col">
-                    <div>
-                        <label for="expiry">Expiry</label>
-                        <input id="expiry" name="expiry" placeholder="MM/YY" required />
-                    </div>
-
-                    <div>
-                        <label for="cvv">CVV</label>
-                        <input id="cvv" name="cvv" inputmode="numeric" placeholder="123" required />
-                    </div>
-                </div>
-
-                <button class="btn-primary" type="button">Place Order</button>
-            </div>
-        </section>
-
-        <!-- Order Summary -->
-        <aside class="card summary" aria-labelledby="summary-title">
-            <h2 id="summary-title">Order Summary</h2>
-
-            <ul class="summary-list">
-                <li class="row">
-                    <span>Product 1</span>
-                    <span>$49.99</span>
-                </li>
-
-                <li class="row">
-                    <span>Product 2</span>
-                    <span>$29.99</span>
-                </li>
-
-                <li class="row">
-                    <span>Shipping</span>
-                    <span>$5.00</span>
-                </li>
-
-                <li class="row total">
-                    <strong>Total</strong>
-                    <strong>$84.98</strong>
-                </li>
+        <nav aria-label="Primary">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
             </ul>
+        </nav>
+    </header>
 
-            <button class="btn-secondary" type="button">Apply Promo Code</button>
-        </aside>
-    </div>
-</main>
+    <h1 id="checkout-title">Checkout</h1>
+
+    <main class="checkout" aria-labelledby="checkout-title">
+        <div class="checkout__grid">
+
+            <!-- Billing Details -->
+            <section class="card" aria-labelledby="billing-title">
+                <h2 id="billing-title">Billing Details</h2>
+
+                <div class="fields">
+                    <div class="field">
+                        <label for="fullName">Full Name</label>
+                        <input id="fullName" name="fullName" type="text" placeholder="Jane Doe" required />
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" placeholder="jane@example.com" required />
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+1 555 123 4567" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shipping Address -->
+            <section class="card" aria-labelledby="shipping-title">
+                <h2 id="shipping-title">Shipping Address</h2>
+
+                <div class="fields">
+                    <div class="field">
+                        <label for="address1">Address</label>
+                        <input id="address1" name="address1" type="text" placeholder="123 Main Street" required />
+                    </div>
+
+                    <div class="field two-col">
+                        <div>
+                            <label for="city">City</label>
+                            <input id="city" name="city" type="text" placeholder="Los Angeles" required />
+                        </div>
+
+                        <div>
+                            <label for="zip">ZIP Code</label>
+                            <input id="zip" name="zip" type="text" placeholder="90001" required />
+                        </div>
+                    </div>
+
+                    <div class="field two-col">
+                        <div>
+                            <label for="state">State/Province</label>
+                            <input id="state" name="state" type="text" placeholder="CA" required />
+                        </div>
+
+                        <div>
+                            <label for="country">Country</label>
+                            <select id="country" name="country" required>
+                                <option value="" disabled selected>Select a country</option>
+                                <option>United States</option>
+                                <option>Canada</option>
+                                <option>United Kingdom</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label class="check">
+                        <input type="checkbox" id="sameAsBilling" />
+                        Shipping address is the same as billing
+                    </label>
+                </div>
+            </section>
+
+            <!-- Shipping Method -->
+            <section class="card" aria-labelledby="shipping-method-title">
+                <h2 id="shipping-method-title">Shipping Method</h2>
+
+                <div class="radio-group">
+                    <label class="radio">
+                        <input type="radio" name="shipMethod" checked />Standard (3-5 business days) — Free
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="shipMethod" />Expedited (2 business days) — $9.99
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="shipMethod" />Next-Day — $19.99
+                    </label>
+                </div>
+            </section>
+
+            <!-- Payment -->
+            <section class="card" aria-labelledby="payment-title">
+                <h2 id="payment-title">Payment</h2>
+
+                <div class="fields">
+                    <div class="field">
+                        <label for="cardNumber">Card Number</label>
+                        <input id="cardNumber" name="cardNumber" inputmode="numeric" placeholder="1234 5678 9012 3456"
+                            required />
+                    </div>
+
+                    <div class="field two-col">
+                        <div>
+                            <label for="expiry">Expiry</label>
+                            <input id="expiry" name="expiry" placeholder="MM/YY" required />
+                        </div>
+
+                        <div>
+                            <label for="cvv">CVV</label>
+                            <input id="cvv" name="cvv" inputmode="numeric" placeholder="123" required />
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" type="button">Place Order</button>
+                </div>
+            </section>
+
+            <!-- Order Summary -->
+            <aside class="card summary" aria-labelledby="summary-title">
+                <h2 id="summary-title">Order Summary</h2>
+
+                <ul class="summary-list">
+                    <li class="row">
+                        <span>Product 1</span>
+                        <span>$49.99</span>
+                    </li>
+
+                    <li class="row">
+                        <span>Product 2</span>
+                        <span>$29.99</span>
+                    </li>
+
+                    <li class="row">
+                        <span>Shipping</span>
+                        <span>$5.00</span>
+                    </li>
+
+                    <li class="row total">
+                        <strong>Total</strong>
+                        <strong>$84.98</strong>
+                    </li>
+                </ul>
+
+                <button class="btn-secondary" type="button">Apply Promo Code</button>
+            </aside>
+        </div>
+    </main>
 
 <!-- Footer -->
-<footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-top">
-        <h3>Subscribe to our Newsletter</h3>
-        <form class="newsletter" action="#" method="post">
-            <label class="sr-only" for="email">Email address</label>
-            <input id="email-unique" name="EmailAddress" type="email" placeholder="Your Email" required>
-            <button type="submit">Subscribe</button>
-        </form>
+      <h3 id="myh3">Subscribe to our Newsletter</h3>
+      <form class="newsletter" id="newsletterForm" onsubmit="return false;">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email3" name="EmailAddress" type="email" placeholder="Enter your email address" required>
+        <button id="subscribeBtn" type="button">Subscribe</button>
+      </form>
     </div>
 
     <nav aria-label="Footer">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="community.html">Checkout</a></li>
-        </ul>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="community.html">Checkout</a></li>
+      </ul>
     </nav>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <ul class="social">
-        <li><a aria-label="Facebook" href="#" class="fa fa-facebook" title="Facebook"></a></li>
-        <li><a aria-label="Google" href="#" class="fa fa-google" title="Google"></a></li>
-        <li><a aria-label="YouTube" href="#" class="fa fa-youtube" title="YouTube"></a></li>
-        <li><a aria-label="Reddit" href="#" class="fa fa-reddit" title="Reddit"></a></li>
+      <li><a aria-label="Facebook" href="#" class="fa fa-facebook" title="Facebook"></a></li>
+      <li><a aria-label="Google" href="#" class="fa fa-google" title="Google"></a></li>
+      <li><a aria-label="YouTube" href="#" class="fa fa-youtube" title="YouTube"></a></li>
+      <li><a aria-label="Reddit" href="#" class="fa fa-reddit" title="Reddit"></a></li>
     </ul>
-</footer>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

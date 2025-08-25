@@ -8,41 +8,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-</html>
-<!-- Header -->
-<header class="site-header">
-    <a href="index.html">
-        <img src="images/output-onlinepngtools.png" alt="Book Haven Bookstore Logo" width="100" height="100">
-    </a>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <a href="index.html">
+            <img src="images/output-onlinepngtools.png" alt="Book Haven Bookstore Logo" width="100" height="100">
+        </a>
 
-    <a href="index.html" class="site-title-link">
-        <h1>Book Haven Bookstore</h1>
-    </a>
+        <a href="index.html" class="site-title-link">
+            <h1>Book Haven Bookstore</h1>
+        </a>
 
-    <nav aria-label="Primary">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="checkout.html">Checkout</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav aria-label="Primary">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Shopping Cart -->
-<div class="topbar">
-    <a href="checkout.html" class="view-cart">
-        View Cart (<span id="cartCount">0</span>)
-    </a>
-</div>
+    <!-- Shopping Cart -->
+    <div class="topbar">
+        <a class="view-cart">
+            View Cart (<span id="cartCount">0</span>)
+        </a>
+    </div>
 
-<!-- Shop Title -->
+    <!-- Shop Title -->
     <main class="gallery-main">
         <h1 class="shop-title">Choose from our Wonderful Selection</h1>
 
         <p class="subhead">Click "Add to Cart" to queue items, then "View Cart".</p>
 
-<!-- Gallery -->
+        <!-- Gallery -->
         <section class="gallery">
             <!-- Column 1, Row 1 -->
             <article class="tile">
@@ -116,34 +116,42 @@
                 <button class="button-add">Add to Cart</button>
             </article>
         </section>
+
     </main>
 
-<!-- Footer -->
-<footer class="site-footer">
-    <div class="footer-top">
-        <h3>Subscribe to our Newsletter</h3>
-        <form class="newsletter" action="#" method="post">
-            <label class="sr-only" for="email">Email address</label>
-            <input id="email" name="EmailAddress" type="email" placeholder="Your Email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <h3 id="myh3">Subscribe to our Newsletter</h3>
+            <form class="newsletter" id="newsletterForm" onsubmit="return false;">
+                <label class="sr-only" for="email">Email address</label>
+                <input id="email" name="EmailAddress" type="email" placeholder="Enter your email address" required>
+                <button id="subscribeBtn" type="button">Subscribe</button>
+            </form>
+        </div>
 
-    <nav aria-label="Footer">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="community.html">Checkout</a></li>
+        <nav aria-label="Footer">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="community.html">Checkout</a></li>
+            </ul>
+        </nav>
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <ul class="social">
+            <li><a aria-label="Facebook" href="#" class="fa fa-facebook" title="Facebook"></a></li>
+            <li><a aria-label="Google" href="#" class="fa fa-google" title="Google"></a></li>
+            <li><a aria-label="YouTube" href="#" class="fa fa-youtube" title="YouTube"></a></li>
+            <li><a aria-label="Reddit" href="#" class="fa fa-reddit" title="Reddit"></a></li>
         </ul>
-    </nav>
+    </footer>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 
-    <ul class="social">
-        <li><a aria-label="Facebook" href="#" class="fa fa-facebook" title="Facebook"></a></li>
-        <li><a aria-label="Google" href="#" class="fa fa-google" title="Google"></a></li>
-        <li><a aria-label="YouTube" href="#" class="fa fa-youtube" title="YouTube"></a></li>
-        <li><a aria-label="Reddit" href="#" class="fa fa-reddit" title="Reddit"></a></li>
-    </ul>
-</footer>
+</body>
+
+</html>
